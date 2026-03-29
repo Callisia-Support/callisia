@@ -10,8 +10,10 @@
 
 <body>
 
-  <aside class="sidebar">
-    <a href="#" class="sidebar-logo-link" title="Back to top">
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">×</button>
+
+    <a href="#" class="sidebar-logo-link" title="Return to top">
       <img src="../../img/logo.svg" alt="Callisia Logo" class="logo-img sidebar-logo-img">
     </a>
 
@@ -34,10 +36,15 @@
     </div>
   </aside>
 
-  <main class="main-area">
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
+  <main class="main-area">
     <header class="top-header">
-      <div class="header-left"></div>
+      <div class="header-left">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-controls="sidebar" aria-expanded="false">
+          ☰
+        </button>
+      </div>
 
       <div class="header-center">
         <a href="#" id="link-privacy" class="btn-nav" data-i18n="btn_privacy">Privacy Policies</a>
