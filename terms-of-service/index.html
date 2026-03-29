@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Callisia Support</title>
   <script>
     const userLang = navigator.language || navigator.userLanguage;
     const targetLang = userLang.toLowerCase().startsWith('pt') ? 'pt' : 'en';
 
-    window.location.replace(`privacy-policy/${targetLang}/`);
+    window.location.replace(`./${targetLang}/`);
   </script>
 </head>
 
 <body>
-  <p>Redirecting...</p>
+  <p>Redirecting to your language...</p>
 </body>
 
 </html>
